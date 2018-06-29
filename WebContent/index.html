@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" ng-app="BravoApp">
+
+  <head>
+  	<title>Bravo Awards Nomination</title>
+  	<link href="assets/css/style.css" rel="stylesheet" type='text/css'/>
+      <link rel="stylesheet" type="text/css" href="assets/css/hrstyle.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/successstyle.css">
+
+  </head>
+
+  <body>
+    <nav>
+      <a href="#!nominate">Nominate</a>
+    </nav>
+    <div>
+      <ng-view></ng-view>
+    </div>
+    <!--ASSETS-->
+    <script src = "assets/scripts/jquery-3.3.1.min.js"></script>
+    <script src = "assets/scripts/angular.min.js"></script>
+    <script src = "assets/scripts/angular-route.min.js"></script>
+    <!--MODULES-->
+    <script src = "js/app.js"></script>
+    <script src = "js/app.route.js"></script>
+
+    <!-- CONTROLLERS -->
+	<script src = "components/nominate/nominate.ctrl.js"></script>
+  <script src = "components/hrapproval/hrapproval.ctrl.js"></script>
+  <script src = "components/success/success.ctrl.js"></script>
+    <!--script>
+      $(function () {
+        $("#datepicker,#datepicker1").datepicker();
+      });
+    </script-->
+
+  </body>
+
+</html>

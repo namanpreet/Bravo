@@ -1,0 +1,54 @@
+	<div class="nominate">
+		<div class = "nominateHeader">
+			<h1>Bravo Awards Nomination </h1>
+		</div>	
+		<div class="nominateForm">
+			<form name = "nominateForm" class="agile_form" ng-submit='nominate(nominateForm.$valid)' novalidate>
+				<div class="agileits-left">
+					<input type="text" name="userName" class="username" placeholder="Your Name"  ng-model='name' required>
+					<span style="color:red" ng-show="nominateForm.userName.$touched && nominateForm.userName.$invalid">
+						<span ng-show="nominateForm.userName.$error.required">Name is required.</span>
+					</span>
+				</div>
+
+				<div class="agileits-left">
+					<input type="text" name="nomineeName" class="username" placeholder="Nominee's name"  ng-model='nomineeName' required>
+					<span style="color:red" ng-show="nominateForm.nomineeName.$touched && nominateForm.nomineeName.$invalid">
+						<span ng-show="nominateForm.nomineeName.$error.required">Nominee's Name is required.</span>
+					</span>
+				</div>
+
+				<div class="agileits-left">
+					<input type="email" name="email" class="username" placeholder="Nominee's email" ng-model='nomineeEmail' required>
+					<span style="color:red" ng-show="nominateForm.email.$touched && nominateForm.email.$invalid">
+						<span ng-show="nominateForm.email.$error.required">Nominee's Email is required.</span>
+						<span ng-show="nominateForm.email.$error.email">Invalid email address.</span>
+					</span>
+				</div>
+				<div class="section_class_agileits">
+					<select name='awardType' ng-model='awardTypeSelected' ng-options='awardType for awardType in awardTypeList' required>
+						<option value="">Type of Award</option>
+					</select>
+					<span style="color:red" ng-show="nominateForm.awardType.$touched && nominateForm.awardType.$invalid">
+						<span ng-show="nominateForm.awardType.$error.required">Award Type is required.</span>
+					</span>
+				</div>
+				<div class="checkin agileits-left">
+					<input placeholder="Date of Nomination" class="date" name="nominationDate" id="datepicker" type="text" value="" onfocus="this.value = '';"
+					    onblur="if (this.value == '') {this.value = '';}" required ng-model='nominationDate'/>
+				</div>
+				<div class="agileits-left">
+					<input type="text" name="comments" class="username" placeholder="Any Remarks/Comments" required ng-model='comments'>
+					<span style="color:red" ng-show="nominateForm.comments.$touched && nominateForm.comments.$invalid">
+						<span ng-show="nominateForm.comments.$error.required">Award Type is required.</span>
+					</span>
+				</div>
+
+				<div class="submit-w3l">
+					<input type="submit" value="Submit">
+				</div>
+			</form>
+		</div>
+		<div class="clear"></div>
+		<div class="clear"></div>
+	</div>

@@ -1,0 +1,27 @@
+!SESSION 2018-06-29 14:00:31.982 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.net 1 0 2018-06-29 14:00:50.814
+!MESSAGE System property http.proxyHost is not set but should be gursquid01.
+
+!ENTRY org.eclipse.core.net 1 0 2018-06-29 14:00:50.819
+!MESSAGE System property http.proxyPort is not set but should be 3128.
+
+!ENTRY org.eclipse.core.net 1 0 2018-06-29 14:00:50.820
+!MESSAGE System property https.proxyHost is not set but should be gursquid01.
+
+!ENTRY org.eclipse.core.net 1 0 2018-06-29 14:00:50.821
+!MESSAGE System property https.proxyPort is not set but should be 3128.
+
+!ENTRY org.eclipse.core.net 1 0 2018-06-29 14:00:50.824
+!MESSAGE System property https.proxyHost is not set but should be gursquid01.
+
+!ENTRY org.eclipse.core.net 1 0 2018-06-29 14:00:50.825
+!MESSAGE System property https.proxyPort is not set but should be 3128.
+
+!ENTRY org.zeroturnaround.eclipse 4 0 2018-06-29 14:01:08.395
+!MESSAGE Connection to https://headless.zeroturnaround.com refused
